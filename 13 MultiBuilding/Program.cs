@@ -35,7 +35,7 @@ namespace _13_MultiBuilding
         }
         public void Print()
         {
-            Console.WriteLine("{0},{1},{2},{3}", Address, Lenght, Width, Height);
+            Console.WriteLine("{0}\n{1}\n{2}\n{3}", Address, Lenght, Width, Height);
         }
     }
     sealed class MultiBuilding : Building
