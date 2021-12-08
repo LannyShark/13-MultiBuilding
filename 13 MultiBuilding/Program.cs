@@ -13,6 +13,7 @@ namespace _13_MultiBuilding
         {
             MultiBuilding multiBuilding = new MultiBuilding("Москва", 58000, 18000, 16660, 5);
             multiBuilding.Print();
+            Console.ReadKey();
         }
     }
     class Building
@@ -48,6 +49,11 @@ namespace _13_MultiBuilding
             : base(address, lenght, width, heigth)
         {
             Floors = floors;
+        }
+        public new void Print()
+        {
+            base.Print();
+            Console.WriteLine("{0}", Floors);
         }
     }
 }
